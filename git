@@ -1,0 +1,2 @@
+git remote add origin https://ozgursarikamis.visualstudio.com/Typescript/_git/Typescript 
+git push -u origin --all
