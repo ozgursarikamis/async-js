@@ -1,2 +1,6 @@
+git init
+git stage --all
+git commit -m "initial commit"
+
 git remote add origin https://ozgursarikamis.visualstudio.com/Typescript/_git/Typescript 
-git push -u origin --all
+git push -u origin --allcls
