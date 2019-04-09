@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html -p 6565 --open",
+    "start": "parcel index.html -p 6565",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
