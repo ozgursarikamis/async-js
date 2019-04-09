@@ -33,9 +33,15 @@ export default class Map {
                   // Get the documents collection
                   const collection = db.collection('TestData');
                   // Find some documents
-                  collection.find({id: 1000}).toArray(function(err, docs) { 
+                  collection.find({id: 1000}).toArray(function(err, docs) {
                       console.log("Found the following records");
-                      console.log(docs)
+                      // console.log(docs)
+                      docs.forEach(doc => {
+                          console.log('doc.latitude', doc.latitude);      
+                          console.log('doc.longitude', doc.longitude);      
+                          console.log('doc.first_name', doc.first_name);      
+                          console.log('doc.last_name', doc.last_name);      
+                      });
                       callback(docs);
                   });
               }

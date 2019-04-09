@@ -20,13 +20,18 @@ client.connect(function(err) {
         const collection = db.collection('TestData');
         // Find some documents
         collection.find({id: 1000}).toArray(function(err, docs) { 
-            console.log("Found the following records");
-            console.log(docs)
             callback(docs);
         });
     }
 
     findDocuments(db, docs => {
-        console.log(docs);
+        docs.forEach(doc => {
+            console.log('============================================');    
+            console.log('latitude\t', doc.latitude);      
+            console.log('longitude\t', doc.longitude);      
+            console.log('first_name\t', doc.first_name);      
+            console.log('last_name\t', doc.last_name);    
+        });
+        console.log('============================================');    
     })
 });
