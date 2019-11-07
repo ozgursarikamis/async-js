@@ -8,8 +8,7 @@ L.Icon.Default.mergeOptions({
     iconUrl: require('leaflet/dist/images/marker-icon.png'),
     shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
-export default class Map {    
-
+export default class Map {
     static async LoadData(): Promise<void> {     
         var client = new DbClient();
         await client.connect();
