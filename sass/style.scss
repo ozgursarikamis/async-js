@@ -9,8 +9,18 @@ body {
     height: 100%; 
     background-color: rgb(255, 255, 255);
     position: absolute;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     top: 0;
     height: 100%;
+}
+
+.logoContainer {
+    z-index: 9999 !important;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline;
+    width: 100%;
 }

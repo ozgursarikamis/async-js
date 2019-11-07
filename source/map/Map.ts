@@ -15,7 +15,7 @@ export default class Map {
         await client.connect();
     }
     static Start(): void {   
-        var map = L.map('map').setView([32, 42], 2);    
+        var map = L.map('map').setView([51, 5.5], 16);    // [latitude, longitude], zoom level
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);

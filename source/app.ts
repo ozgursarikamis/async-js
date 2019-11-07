@@ -8,5 +8,9 @@ class App {
     }
 }
 
+function getElementById(elementId:string) : string | undefined {
+    console.log('elementId', elementId);
+    return "";
+}
 const app = new App();
 app.Start();
