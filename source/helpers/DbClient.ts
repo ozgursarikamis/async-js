@@ -12,12 +12,12 @@ export class DbClient {
     //   }
     // });
 
-    return MongoClient.connect("mongodb://localhost:27017/TestDb")
-    .then((db: any) => {
-        this.db = db;
-    })
-    .catch(err => {
-        console.log(err);
-    });
+    // return MongoClient.connect("mongodb://localhost:27017/TestDb")
+    // .then((db: any) => {
+    //     this.db = db;
+    // })
+    // .catch(err => {
+    //     console.log(err);
+    // });
   }
 } 

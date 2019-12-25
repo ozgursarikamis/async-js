@@ -10,11 +10,11 @@ L.Icon.Default.mergeOptions({
 });
 export default class Map {
     static async LoadData(): Promise<void> {     
-        var client = new DbClient();
+        const client = new DbClient();
         await client.connect();
     }
     static Start(): void {   
-        var map = L.map('map').setView([51, 5.5], 16);    // [latitude, longitude], zoom level
+        const map = L.map('map').setView([51, 5.5], 16);    // [latitude, longitude], zoom level
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);

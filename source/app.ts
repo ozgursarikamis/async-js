@@ -2,9 +2,9 @@ import '../sass/style.scss';
 import Map from './map/Map'; 
 
 class App {
-    Start(): void {
+    async Start(): Promise<any> {
         Map.Start();  
-        Map.LoadData();
+        await Map.LoadData();
     }
 }
 
@@ -13,4 +13,4 @@ function getElementById(elementId:string) : string | undefined {
     return "";
 }
 const app = new App();
-app.Start();
+app.Start().then(() => { });
